@@ -1,0 +1,18 @@
+add_filter( 'woocommerce_product_add_to_cart_text', 'woo_archive_custom_cart_button_text' );    // 2.1 +
+function woo_archive_custom_cart_button_text() {
+return __( 'My Button Text', 'woocommerce' );
+}
+}
+<!--- By category  -->
+
+add_filter( 'woocommerce_product_add_to_cart_text', 'bbloomer_archive_custom_cart_button_text' );
+ 
+function bbloomer_archive_custom_cart_button_text() {
+	global $product;       
+
+	if ( has_term( 'arcade-machine-stands', 'product_cat', $product->ID ) ) {           
+	return 'View more';
+	} else {
+	return 'Add To Basket';
+	}
+}

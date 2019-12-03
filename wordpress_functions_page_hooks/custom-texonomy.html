@@ -1,0 +1,121 @@
+//create a custom taxonomy name it "instructor" for your posts
+add_action( 'init', 'create_genre_taxonomy', 0 );
+function create_genre_taxonomy() {
+ 
+  $labels = array(
+    'name' => _x( 'Genre', 'taxonomy general name' ),
+    'menu_name' => __( 'Genre' ),
+  ); 	
+ 
+  register_taxonomy('genre',array('videoslist'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'genre' ),
+  ));
+}
+/* Taxonomies custom end */
+//get custom post type by texonomy
+function portfolio_homepage($id){
+    $the_query = new WP_Query( array(
+    'post_type' => 'portfolio',
+    'tax_query' => array(
+        array (
+            'taxonomy' => 'portfolio-types',
+            'field' => 'term_id',
+            'terms' => $id,
+        )
+    ),
+) );
+// Register Custom Taxonomy
+function custom_taxonomy() {
+
+	$labels = array(
+		'name'                       => _x( 'Taxonomies', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Taxonomy', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Taxonomy', 'text_domain' ),
+		'all_items'                  => __( 'All Items', 'text_domain' ),
+		'parent_item'                => __( 'Parent Item', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Item:', 'text_domain' ),
+		'new_item_name'              => __( 'New Item Name', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Item', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Item', 'text_domain' ),
+		'update_item'                => __( 'Update Item', 'text_domain' ),
+		'separate_items_with_commas' => __( 'Separate items with commas', 'text_domain' ),
+		'search_items'               => __( 'Search Items', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Choose from the most used items', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => false,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'taxonomy', array( 'post' ), $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'custom_taxonomy', 0 );
+
+
+
+
+example
+
+
+
+$labels = array(
+12
+    'name' => _x( 'Topics', 'taxonomy general name' ),
+13
+    'singular_name' => _x( 'Topic', 'taxonomy singular name' ),
+14
+    'search_items' =>  __( 'Search Topics' ),
+15
+    'all_items' => __( 'All Topics' ),
+16
+    'parent_item' => __( 'Parent Topic' ),
+17
+    'parent_item_colon' => __( 'Parent Topic:' ),
+18
+    'edit_item' => __( 'Edit Topic' ),
+19
+    'update_item' => __( 'Update Topic' ),
+20
+    'add_new_item' => __( 'Add New Topic' ),
+21
+    'new_item_name' => __( 'New Topic Name' ),
+22
+    'menu_name' => __( 'Topics' ),
+23
+  );   
+24
+ 
+25
+// Now register the taxonomy
+26
+ 
+27
+  register_taxonomy('topics',array('post'), array(
+28
+    'hierarchical' => true,
+29
+    'labels' => $labels,
+30
+    'show_ui' => true,
+31
+    'show_admin_column' => true,
+32
+    'query_var' => true,
+33
+    'rewrite' => array( 'slug' => 'topic' ),
+34
+  ));

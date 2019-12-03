@@ -1,0 +1,51 @@
+// hide update notifications
+function remove_core_updates(){
+global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+}
+add_filter('pre_site_transient_update_core','remove_core_updates'); //hide updates for WordPress itself
+add_filter('pre_site_transient_update_plugins','remove_core_updates'); //hide updates for all plugins
+add_filter('pre_site_transient_update_themes','remove_core_updates'); //hide updates for all themes
+
+
+// hide widgets from dashboard
+
+
+
+// test role
+if( !in_array('instructor',$roles)){
+return;
+}
+remove_menu_page( 'index.php' ); //dashboard
+remove_menu_page( 'edit.php' ); //Posts
+remove_menu_page( 'upload.php' ); //Media
+remove_menu_page( 'edit-comments.php' ); //Comments
+remove_menu_page( 'themes.php' ); //Appearance
+remove_menu_page( 'plugins.php' ); //Plugins
+remove_menu_page( 'users.php' ); //Users
+remove_menu_page( 'tools.php' ); //Tools
+remove_menu_page( 'options-general.php' ); //Settings
+remove_menu_page( 'edit.php?post_type=page' ); //Pages
+remove_menu_page('edit.php?post_type=testimonial'); // Custom post type 1
+remove_menu_page('edit.php?post_type=homeslider'); // Custom post type 2
+remove_menu_page('admin.php?page=vc-welcome'); // Custom post type 2
+remove_menu_page( 'edit.php?post_type=popups' );
+remove_menu_page( 'edit.php?post_type=testimonials' );
+}
+add_action( 'admin_menu', 'remove_menus' , 100 );
+
+/* remove chart */
+// Remove WP admin dashboard widgets
+function isa_disable_dashboard_widgets() {
+    remove_meta_box('dashboard_right_now', 'dashboard', 'normal');// Remove "At a Glance"
+    remove_meta_box('dashboard_activity', 'dashboard', 'normal');// Remove "Activity" which includes "Recent Comments"
+    remove_meta_box('dashboard_quick_press', 'dashboard', 'side');// Remove Quick Draft
+    remove_meta_box('dashboard_primary', 'dashboard', 'core');// Remove WordPress Events and News
+}
+add_action('admin_menu', 'isa_disable_dashboard_widgets');
+/*
+* Remove "News from Modern Tribe" widget from dashboard
+*/
+function remove_tribe_dashboard_widget() {
+remove_meta_box('tribe_dashboard_widget', 'dashboard', 'normal');
+}
+add_action('wp_dashboard_setup', 'remove_tribe_dashboard_widget');

@@ -1,0 +1,14 @@
+/**
+ * @snippet       Redirect to Checkout Upon Add to Cart - WooCommerce
+ * @how-to        Watch tutorial @ https://businessbloomer.com/?p=19055
+ * @sourcecode    https://businessbloomer.com/?p=21607
+ * @author        Rodolfo Melogli
+ * @compatible    WC 3.3.3
+ */
+ 
+function bbloomer_redirect_checkout_add_cart( $url ) {
+    $url = get_permalink( get_option( 'woocommerce_checkout_page_id' ) ); 
+    return $url;
+}
+ 
+add_filter( 'woocommerce_add_to_cart_redirect', 'bbloomer_redirect_checkout_add_cart' );
