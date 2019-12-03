@@ -1,6 +1,6 @@
    global $wpdb;
       $address =$_POST['address-73'];
-      $api = "AIzaSyBGmrdpAfP60bsLln8_3jPT6A2HJvJE_-k";
+      $api = "";
       
   $prepAddr = str_replace(' ','+',$address);
   $geocode = file_get_contents('https://maps.googleapis.com/maps/api/geocode/json?address=' . $prepAddr. '&key=' . $api . '&sensor=false');
