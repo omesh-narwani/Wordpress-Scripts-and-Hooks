@@ -1,0 +1,405 @@
+/***** 
+   CONTACT FORM 7 > CUSTOMIZE MY PARTS > GET A QUOTE FORM  
+   1. CONTACTFORM7 
+   2. STYLE.SS
+*****/
+
+/* 1. CONTACT FORM7  */
+<div class="customize_parts">
+<div class="Sec-CustParts">
+   <div class="vc_col-sm-12"><h3 class="heading">CUSTOMIZE my parts</h3></div> 
+        <div class="vc_col-sm-6">
+	[text* your-name placeholder "Your Name *"]
+	</div>
+
+	<div class="vc_col-sm-6">
+	[text* your-email placeholder "Last Name *"]
+	</div>
+	<div class="vc_col-sm-12">
+	[text* your-address placeholder "Address *"]
+	</div>
+
+	<div class="vc_col-sm-4">
+	[text* your-city placeholder "City *"]
+	</div>
+	<div class="vc_col-sm-4">
+	[text* your-state placeholder "State *"]
+	</div>
+	<div class="vc_col-sm-4">
+	[text* your-zipcode placeholder "ZIP CODE *"]
+	</div>
+
+	<div class="vc_col-sm-4">
+	[tel* your-phone placeholder "Phone no. *"]
+	</div>
+	<div class="vc_col-sm-4">
+	[email* your-email placeholder "Email Address *"]
+	</div>
+	<div class="vc_col-sm-4">
+	[text* your-preferred_method placeholder "Preferred Method of Contact * "]
+	</div>
+
+</div>
+<div class="Sec-Parts">
+   <div class="vc_col-sm-12">
+     <h3 class="heading">Your parts</h3>
+     <h5 class="subheading">Tell us about the pistol you would like us to work on.</h5> 
+  </div> 
+  <div class="vc_col-sm-12">
+      [textarea parts_additional_note placeholder "Additional note"]
+      <p>All parts used on customer work will be Nighthawk Custom fully machined.</p> 
+  </div>
+</div>
+<div class="Sec-Cerakote">
+   <div class="vc_col-sm-12">
+     <h3 class="heading">Cerakote</h3>
+     <h5 class="subheading">Tell us about the pistol you would like us to work on.</h5>  
+  </div>  
+  <div class="vc_col-sm-12">
+      <p>Choose your part</p> 
+      [checkbox select_cerakote_parts "Slide" "Lower Receiver" "Stock" "Frame" "Upper Receiver" "Complete Gun" "Trigger" "Barrel" "Components"]
+  </div>
+  <div class="vc_col-sm-12">
+       [textarea cerakote_other_part placeholder "i.e. Parts other than firearms, such as Sporting Equipment, Tumblers, etc."]
+  </div> 
+  <div class="vc_col-sm-12">
+      <p>Choose your pattern</p>  
+      [checkbox select_cerakote_pattern "Single Color" "Battle Worn" "Multi color" "Krytek" "Multi Cam"]
+  </div>
+  <div class="vc_col-sm-4">
+   <div class="upload-file">
+       <p><i class="fa fa-paperclip"></i> Upload Image Sample</p>   
+       [file pattern_image_sample  class:pattern_image_sample]
+   </div>
+  </div>  
+  <div class="vc_col-sm-12">
+       [textarea cerakote_note_image_pattern placeholder "Additional note"]
+  </div>
+  <div class="vc_col-sm-12">
+      <p>Choose your color(s)</p>  
+      <div id="color_checkbox"> 
+        [checkbox select_cerakote_colors label_first "Red" "Orange" "Orange Peel" "Gold" "Electric Lime" "Harlequin" "Spring Green" "Medium Spring Green" "Aqua" "Deep Sky Blue" "Navy Blue" "Han Purple" ]
+      </div> 
+  </div>
+  <div class="vc_col-sm-4">
+   <div class="upload-file">
+       <p><i class="fa fa-paperclip"></i> Upload Color Sample</p>  
+       [file pattern_color_sample  class:pattern_image_sample]
+   </div>
+  </div>  
+  <div class="vc_col-sm-12">
+       [textarea cerakote_note_color_pattern placeholder "Additional note"]
+  </div> 
+</div>
+<div class="Sec-Stippling">
+   <div class="vc_col-sm-12">
+     <h3 class="heading">Stippling</h3>
+     <h5 class="subheading">#/10 Aggressiveness</h5> 
+   </div>
+   <div class="vc_col-sm-12">
+      <p>5 hand stippling images</p>  
+      <div id="hand_stippling_images_checkbox"> 
+        [checkbox select_hand_stippling_images label_first "Grip Re-Shape and
+Basket Weave" "Mini crater stipple" "Dat Glock" "Custom Glock" "Transfarmer Stipple"]
+      </div> 
+  </div>
+   <div class="vc_col-sm-12">
+      <p>5 Laser stippling images </p>  
+      <div id="laser_stippling_images_checkbox"> 
+        [checkbox select_laser_stippling_images label_first "Geo Sqaure Skull" "Rose Pattern" "Dark Alliance" "Flower & Filigree" "Shark Coast Tactical"]
+      </div> 
+  </div>
+   <div class="vc_col-sm-12">
+      <p>Frame Work </p>  
+      <div id="stippling_framework_checkbox"> 
+        [checkbox select_laser_stippling_images "Finger groove" "Index Point" "Undercut" "Enhance Trigger well" "Thumb Paddle" "Factory Fill"]
+      </div> 
+  </div>
+  <div class="vc_col-sm-4">
+   <div class="upload-file">
+       <p><i class="fa fa-paperclip"></i> Upload Image Sample</p>  
+       [file pattern_color_sample  class:stippling_framework_image_sample]
+   </div>
+  </div>  
+  <div class="vc_col-sm-12">
+       [textarea stippling_framework_note_color_pattern placeholder "Additional note"]
+  </div> 
+ 
+</div>
+<div class="Sec-Laser-Engraving">
+   <div class="vc_col-sm-12">
+     <h3 class="heading">Laser Engraving</h3>
+     <h5 class="subheading">Tell us about the pistol you would like us to work on.</h5> 
+   </div>
+   <div class="vc_col-sm-12">
+     <div class="vc_col-sm-4">
+       <div class="upload-file">
+         <p><i class="fa fa-paperclip"></i> Vector File Submission</p>  
+         [file laser-engraving_vector_submission  class:Laser-Engraving_vector_submission]
+      </div>
+     </div>  
+   </div>
+   <div class="vc_col-sm-12">
+     <div class="vc_col-sm-4">
+       <div class="upload-file">
+         <p><i class="fa fa-paperclip"></i> Prefered Black and White images</p>  
+         [file laser-engraving_image_sample  class:Laser-Engraving_prefered_image]
+      </div>
+     </div>  
+   </div>
+  <div class="vc_col-sm-12">
+       [textarea laser-engraving_additional_note placeholder "Additional note"]
+  </div>
+  <div class="vc_col-sm-12">
+       [textarea* laser-engraving_special_instruction placeholder "Special Instructions *"]
+  </div>  
+</div>
+  <div class="vc_col-sm-5">
+       <label>Enter your specific details here</label>
+       [text promo_code placeholder "Promo Code"]
+  </div> 
+  <div class="vc_col-sm-12">
+       [checkbox select_discount_type "Veteran Discount" "First time buyer discount" "Disassembled weapon discount"]
+  </div> 
+   <div class="vc_col-sm-4 pdf-link">
+       <a href="http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/Order-Form.pdf" target="__blank"><img src="http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/pdf-image.png" /></a>
+   </div>
+   <div class="vc_col-sm-12">
+         [submit class:CustomizePartsBtn "Submit for a Quote"]
+   </div>
+</div>
+
+/* CUSTOM STYLE CSS  */
+<style>
+	#Content {
+		padding-top: 80px;
+	}
+	h2.heading{
+		text-transform:uppercase;
+	}
+	h3.heading {
+		font-size: 30px;
+		line-height: 36px;
+		text-transform: uppercase;
+		text-align:center;
+	}
+	h5.subheading {
+		font-size: 14px;
+		font-weight: 500;
+		text-align: center;
+	}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #fff;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: #fff;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: #fff;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: #fff;
+	}
+	.customize_parts textarea {
+		height: 85px;
+		background: transparent;
+		border: 2px solid #252525;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+	.customize_parts input[type="text"],
+	.customize_parts input[type="tel"],
+	.customize_parts input[type="email"],
+	.customize_parts input[type="select"]{
+		background: transparent;
+		border: 2px solid #252525;
+		color: #fff;
+		font-size: 14px;
+		margin-bottom: 15px;
+	}
+	.customize_parts .wpcf7-list-item {
+		display: inline-block !important;
+		width: 32%;
+		float: left;
+		color: #a6a6a6;
+		padding: 5px 0px;
+		margin: 0px;
+	}
+	.upload-file {
+		/*background: url(http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/img-sample.png) no-repeat;*/
+		padding: 5px 15px;
+		border: 2px solid #252525;
+		margin-bottom: 30px;
+	}
+
+	.upload-file input {
+		display: inherit !important;
+		width: 100%;
+		height: 50px;
+	}
+	.customize_parts #color_checkbox .wpcf7-list-item {
+		width: 8.3% !important;
+		display: block !important;
+		float: left !important;
+	}
+	.customize_parts #color_checkbox .wpcf7-list-item-label, .customize_parts #color_checkbox input[type="checkbox"],
+	.customize_parts #hand_stippling_images_checkbox .wpcf7-list-item-label, .customize_parts #hand_stippling_images_checkbox input[type="checkbox"],
+	.customize_parts #laser_stippling_images_checkbox .wpcf7-list-item-label, .customize_parts #laser_stippling_images_checkbox input[type="checkbox"]{
+		display: block;
+		text-align: center;
+		margin: auto !important;
+	}
+
+	/* Color Box */
+	#color_checkbox .wpcf7-list-item-label {
+		position: relative;
+		display: block !important;
+		font-size: 0px;
+		height: 84px;
+		width: 84px;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(1) > .wpcf7-list-item-label {
+		background: #ff0000;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(2) > .wpcf7-list-item-label {
+		background: #ff4e00;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(3) > .wpcf7-list-item-label {
+		background: #ff9600;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(4) > .wpcf7-list-item-label {
+		background: #ffd200;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(5) > .wpcf7-list-item-label {
+		background: #c6ff00;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(6) > .wpcf7-list-item-label {
+		background: #36ff00;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(7) > .wpcf7-list-item-label {
+		background: #00ff66;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(8) > .wpcf7-list-item-label {
+		background: #00ffa8;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(9) > .wpcf7-list-item-label {
+		background: #00fcff;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(10) > .wpcf7-list-item-label {
+		background: #00a2ff;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(11) > .wpcf7-list-item-label {
+		background: #0048ff;
+		margin-bottom: 15px !important;
+	}
+	#color_checkbox .wpcf7-list-item:nth-child(12) > .wpcf7-list-item-label {
+		background: #4e00ff;
+		margin-bottom: 15px !important;
+	}
+	/* Image Checkbox */
+	.customize_parts #hand_stippling_images_checkbox .wpcf7-list-item,
+	.customize_parts #laser_stippling_images_checkbox .wpcf7-list-item{
+		width: 20% !important;
+		display: block !important;
+		float: left !important;
+		padding: 0px 25px;
+	}
+	.customize_parts #hand_stippling_images_checkbox .wpcf7-list-item-label{
+		line-height: 20px;
+		height: 230px;
+		padding: 0px 10px;
+		color: #fff;
+	}
+
+	.customize_parts #laser_stippling_images_checkbox .wpcf7-list-item-label{
+		line-height: 20px;
+		padding: 0px 10px;
+		color: #fff;
+	}
+	#hand_stippling_images_checkbox .wpcf7-list-item .wpcf7-list-item-label::before,
+	#laser_stippling_images_checkbox .wpcf7-list-item .wpcf7-list-item-label::before
+	{
+		position: relative;
+		width: auto;
+		height: auto !important;
+		display: block;
+	 
+	}
+	#hand_stippling_images_checkbox .wpcf7-list-item:nth-child(1) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/grip-reshape-basket-waves.jpg');
+		   margin: auto;
+		
+	}
+
+	#hand_stippling_images_checkbox .wpcf7-list-item:nth-child(2) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/mini-crater-stripple.jpg');
+		margin: auto;
+	}
+	#hand_stippling_images_checkbox .wpcf7-list-item:nth-child(3) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/dat-glock.jpg');
+		margin: auto;
+	}
+	#hand_stippling_images_checkbox .wpcf7-list-item:nth-child(4) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/custom-glock.jpg');
+		margin: auto;
+	}
+	#hand_stippling_images_checkbox .wpcf7-list-item:nth-child(5) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/transfarmer-stripple.jpg');
+		margin: auto;
+	}
+	/* LASER */
+	#laser_stippling_images_checkbox .wpcf7-list-item:nth-child(1) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/Geo-Sqaure-Skull.jpg');
+		   margin: auto;
+		
+	}
+
+	#laser_stippling_images_checkbox .wpcf7-list-item:nth-child(2) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/Rose-Pattern.jpg');
+		margin: auto;
+	}
+	#laser_stippling_images_checkbox .wpcf7-list-item:nth-child(3) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/Dark-Alliance.jpg');
+		margin: auto;
+	}
+	#laser_stippling_images_checkbox .wpcf7-list-item:nth-child(4) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/Flower-Filigree.jpg');
+		margin: auto;
+	}
+	#laser_stippling_images_checkbox .wpcf7-list-item:nth-child(5) > .wpcf7-list-item-label::before {
+		content: URL('http://websiteladz.com/demo/SanisterMass/wp-content/uploads/2018/11/Shark-Coast-Tactical.jpg');
+		margin: auto;
+	}
+	.Sec-Laser-Engraving .vc_col-sm-12 .vc_col-sm-4 {
+		padding: 0px;
+	}
+	.pdf-link {
+		width: 150px;
+	}
+	.CustomizePartsBtn {
+		border-radius: 0px !important;
+		background-color: #e92d2d !important;
+		font-size: 18px;
+		text-transform: uppercase;
+		font-weight: 500;
+		padding: 10px 60px !important;
+		margin-top: 20px;
+	}
+	.Sec-CustParts, .Sec-Parts, .Sec-Cerakote, .Sec-Stippling, .Sec-Laser-Engraving {
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		margin: 15px 5px;
+	}
+</style>
