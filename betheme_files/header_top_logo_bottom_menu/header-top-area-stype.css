@@ -1,0 +1,60 @@
+#Header{
+    min-height:auto !important;
+}
+#Subheader {
+    padding: 90px 0px;
+}
+#Subheader h1, #Subheader li, #Subheader a {
+    color: #fff !important;
+    font-style: normal !important;
+}
+#Subheader h1 {
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px !important;
+}
+.menu-highlight.header-stack #Top_bar .menu > li > a {
+    margin: 0px 0px !important;
+    border-radius: 0px;
+    font-weight: 600;
+}
+.menu-highlight.header-stack #Top_bar .menu > li > a span:not(.description) {
+    line-height: 40px;
+    padding: 5px 7px;
+}
+ .header-stack #Top_bar .logo{
+    border:unset !important;
+}
+.logo {
+    display: inline-block;
+    width: auto !important;
+    float: left !important;
+   padding-left: 0px !important;
+}
+.LogoRightAction {
+    padding: 23px 0px;
+    display: inline-block;
+    display:none;
+    float: right;
+    width: auto;
+}
+span.wpcf7-list-item-label {
+    font-size: 9px;
+    line-height: 0em !important;
+}
+.phonehead {
+    display: block;
+    font-size: 17.5px;
+    line-height: 20px;
+    color: #212121;
+    font-weight: 300;
+}
+.PhoneAction a {
+    font-size: 25px;
+    font-weight: 500;
+    color: #212121;
+    text-decoration:unset;
+}
+.TopMenuCustom {
+    background: #019002;
+}

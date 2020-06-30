@@ -1,0 +1,187 @@
+/**** HEADER  ****/
+
+#Header {
+    min-height: auto !important;
+}
+#Top_bar .search-form.Desktop {
+    float: left;
+}
+#Top_bar .SearchBtn {
+    display: inline-block;
+    background: transparent !important;
+    color: #7f7f7f;
+    margin:0px;
+   box-shadow: unset;
+}
+#Top_bar #searchform input {
+      background:transparent;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    margin:0px;
+   box-shadow: none !important;
+
+}
+#Top_bar #searchform input:focus {
+   background:transparent !important;
+}
+#Top_bar .SearchBtn i {
+    font-size: 20px;
+    line-height: 20px;
+}
+#Top_bar #searchform {
+    background: #f0f0f0;
+    border-radius: 50px;
+    padding: 0px 20px;
+}
+#Top_bar .SearchBtn::after {
+    display: none;
+}
+#Top_bar #header_cart > span {
+    background: #ee780a !important;
+    border-radius: 50px !important;
+}
+
+#Top_bar .secondary_menu_wrapper {
+    display: block;
+}
+.SecondMenu {
+    background: #4e4d4e;
+    height: 48px;
+}
+#Header .secondary-menu > li {
+    padding: 15px;
+}
+#Header .secondary-menu > li.hover{
+   background:transparent !important;
+   border-radius:0px !important;
+   border-bottom:2px solid #fff;
+}
+
+#Header .secondary-menu > li a {
+    color: #fff !important;
+}
+#Header .secondary-menu > li.submenu a::after {
+    content: '\e866';
+    float: none !important;
+    display: inline-block;
+    font-family: mfn-icons;
+}
+
+#Header .secondary-menu > li.menu-item-has-children > a::after {
+    content: '\e866';
+    float: none !important;
+    display: inline-block;
+    font-family: mfn-icons;
+    font-size: 16px;
+    padding-left: 7px;
+    position: relative;
+    top: 1px;
+}
+
+.sub-menu {
+    background: #4e4d4e !important;
+    border-radius: 0px !important;
+}
+ul.sub-menu > li > a::after {
+    display: none !important;
+}
+ul.sub-menu > li {
+    padding: 7px 15px;
+}
+
+/*  sprites  */
+.bg-arrow {
+    width: 16px; height: 16px;
+    background: url('http://1stopwebsitesolution.com/demo/signlab/wp-content/uploads/2020/06/sprite.png') -10px -57px;
+}
+
+.bg-made {
+    width: 16px; height: 16px;
+    background: url('http://1stopwebsitesolution.com/demo/signlab/wp-content/uploads/2020/06/sprite.png') -46px -57px;
+}
+
+.bg-price {
+    width: 15px; height: 27px;
+    background: url('http://1stopwebsitesolution.com/demo/signlab/wp-content/uploads/2020/06/sprite.png') -10px -10px;
+}
+
+.bg-rated {
+    width: 20px; height: 20px;
+    background: url('http://1stopwebsitesolution.com/demo/signlab/wp-content/uploads/2020/06/sprite.png') -45px -10px;
+}
+
+.bg-return {
+    width: 16px; height: 14px;
+    background: url('http://1stopwebsitesolution.com/demo/signlab/wp-content/uploads/2020/06/sprite.png') -82px -57px;
+}
+
+.bg-ship {
+    width: 24px; height: 16px;
+    background: url('http://1stopwebsitesolution.com/demo/signlab/wp-content/uploads/2020/06/sprite.png') -85px -10px;
+}
+.s01-iconbox .vc_col-sm-2 .vc_column-inner {
+    padding: 0px;
+}
+.s01-iconbox .vc_col-sm-2 {
+    padding: 15px 0px;
+}
+.s01-iconbox .icon_box .icon_wrapper::before {
+    display: none !important;
+}
+.s01-iconbox .icon_box:hover .icon_wrapper {
+    -webkit-transform: unset !important;
+    -moz-transform: unset !important;
+    -ms-transform: unset !important;
+    -o-transform: unset !important;
+    transform: unset !important;
+}
+.s01-iconbox .icon_wrapper {
+    background: unset !important;
+    border: unset !important;
+    box-shadow: unset !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 0px !important;
+}
+
+.s01-iconbox .icon_box h4 {
+    font-size: 13px;
+    color: #666;
+    line-height: 14px;
+    font-weight: 400;
+}
+.s01-iconbox .icon_box .desc {
+    color: #888;
+
+}
+.s01-iconbox .icon_box.icon_position_left {
+    min-height: auto !important;
+    padding: 0px 5px;
+    margin: 5px 5px !important;
+    display: inline-block;
+}
+.s01-iconbox .icon_box.icon_position_left .icon_wrapper {
+    position: relative;
+    margin-bottom: 0;
+    display: inline-block;
+    top: 3px;
+}
+.s01-iconbox .icon_box.icon_position_left .desc_wrapper {
+    padding-left: 10px !important;
+    display: inline-block;
+    padding-top:0px;
+}
+.s01-iconbox .icon_box .icon_wrapper i {
+    float:left;
+}
+
+.s01-iconbox .icon_box:nth-child(2) .icon_wrapper {
+    top: 7px;
+}
+.s01-iconbox .icon_box:nth-child(1) {
+    margin-left: 0px !important;
+}
+.s01-iconbox .icon_box:last-child {
+    margin-right: 0px !important;
+}
