@@ -1,0 +1,1 @@
+$return .= '<span class="short-desc">'.apply_filters('the_content',substr($custom_post->post_content, 0, 100)).'</span>';

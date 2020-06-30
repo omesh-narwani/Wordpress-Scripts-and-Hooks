@@ -1,0 +1,98 @@
+/*  recent blog widget */
+.widget-area{
+    border: unset !important;
+}
+.widget-area h3 {
+    font-size: 24px;
+    color: #173446;
+    line-height: 35px;
+    font-family: "Montserrat", Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px !important;
+   text-transform: uppercase;
+}
+.singlepost-social i {
+    color: #a0a0a0;
+    font-size: 20px;
+    padding: 0px 5px;
+}
+.widget-area h3::after {
+    content: "";
+    display: block;
+    background: #0fa988;
+    width: 30%;
+    height: 4px;
+}
+.sidebar .widget-area {
+    padding: 0px;
+}
+.sidebar aside {
+    border: 0px solid #e1e1e1;
+    padding: 10px 20px 25px !important;
+    background: #f3f3f3;
+}
+.sidebar.sidebar-1.four.columns {
+    margin-top: 30px;
+}
+.Recent_posts ul li .photo .c ,
+.Recent_posts ul li a .desc::after,
+.category.mata-tags, .category.meta-categories{
+    display: none;
+}
+.Recent_posts ul li a:hover h6, .Recent_posts ul li a:hover .desc .date {
+    color: #5e5f63 !important;
+}
+.Recent_posts ul li .desc {
+    margin-left: 80px;
+    padding: 0px 5px 0px;
+    background: transparent;
+    position: relative;
+    min-height: 56px;
+    color: #000 !important;
+    margin-right: 0px !important;
+}
+.Recent_posts ul li .photo {
+    width: 70px !important;
+    height: 70px !important;
+    float: left !important;
+}
+.single-photo-wrapper.image .image_frame {
+    border: unset;
+}
+.post-header .title_wrapper h1 {
+    font-size: 36px;
+    color: #212121;
+    font-family: "Montserrat", Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px !important;
+}
+
+.single-post .section.section-post-header {
+    background: #f1f2f4;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
+.column.one.single-photo-wrapper.image {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+   margin-bottom:0px !important;
+}
+.single-photo-wrapper .share_wrapper {
+    float: none;
+    order: 2;
+    width: 100%;
+    background: transparent;
+    border: unset;
+    text-align: left;
+}
+.section-post-header .single-photo-wrapper.image .image_frame {
+    max-width: 80%;
+    max-width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.singlepost-social {
+    margin: 10px 0px;
+}

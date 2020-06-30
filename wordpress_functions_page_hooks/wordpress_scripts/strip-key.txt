@@ -1,0 +1,3 @@
+Publishable:  pk_test_9Dys6qOHlBN40Nm1D0Yy8xyK
+
+Secret:       sk_test_A3pSFspvSr9e4Gcu4YrlYKOg

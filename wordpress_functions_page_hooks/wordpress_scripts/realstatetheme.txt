@@ -1,0 +1,5 @@
+wpresidenceVersion: 1.0
+
+By WP Estate
+
+This is a child theme of Wp Residence 1.30.7.1.

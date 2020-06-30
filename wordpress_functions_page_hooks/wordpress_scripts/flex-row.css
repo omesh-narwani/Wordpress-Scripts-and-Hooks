@@ -1,0 +1,6 @@
+.responsive-about-row{
+    display:flex;
+}
+@media only screen and (max-width:768px){
+    .responsive-about-row{ flex-direction:column-reverse;}
+}
